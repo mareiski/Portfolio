@@ -1,1 +1,38 @@
 // app global css in SCSS form
+* {
+    font-family: 'Roboto';
+}
+
+h1,
+h3,
+h4,
+h5 {
+    font-family: 'Raleway';
+    color: $primary;
+}
+
+.sticky {
+    top: 0;
+    position: sticky;
+
+    a {
+        font-size: 18px;
+    }
+}
+
+.headline-container {
+    height: 100vh;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: $dark;
+}
+
+a:hover {
+    color: $primary;
+}
