@@ -75,7 +75,7 @@
               <vue-badge></vue-badge>
             </div>
           </div>
-          <div class="row q-pt-md">
+          <div id="mirrads" class="row q-pt-md">
             <div class="col-sm-12 col-md-5 q-pr-md">
               <p>
                 Mirrads is a startup from Ingolstadt which sells smart mirros.
@@ -198,11 +198,22 @@
             </div>
 
             <div class="col-sm-12 col-md-5 q-pl-md">
-              <p>Another university project</p>
+              <p>
+                Another university project, which we created in the first
+                semester. We wanted to create an app where groups of friends
+                find together to plan their trip<br /><br />
+                I really liked this idea beacause I already developed a similiar
+                project in my sparetime (see
+                <a @click="scrollToElement('roundtrips4you')">Roundtrips4you</a
+                >). We designed screens in XD and created a final movie of our
+                project.<br /><br />
+                This project helped me a lot to get the first experience in
+                designing screens and developing a product from its idea.
+              </p>
             </div>
           </div>
 
-          <div class="flex justify-between q-mt-lg">
+          <div id="roundtrips4you" class="flex justify-between q-mt-lg">
             <div class="text-h5 q-mb-md">
               <span>Roundtrips4you</span>
               <a href="https://roundtrips4you.de" target="_blank">
@@ -255,8 +266,13 @@
             <div></div>
           </div>
           <div class="row q-pt-md">
-            <div class="col-sm-12 col-md-7"></div>
-            <div class="col-sm-12 col-md-5">
+            <div class="col-sm-12 col-md-7">
+              <q-video
+                src="https://youtube.de/embed/NCLgUBGI74I"
+                :ratio="16 / 9"
+              ></q-video>
+            </div>
+            <div class="col-sm-12 col-md-5 q-pl-md">
               <p>
                 Memucho was the first company where I developed software. It is
                 a website where you can learn interesting things very fast and
