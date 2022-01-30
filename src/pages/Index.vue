@@ -201,7 +201,7 @@
               <p>
                 Another university project, which we created in the first
                 semester. We wanted to create an app where groups of friends
-                find together to plan their trip<br /><br />
+                find together to plan their trip.<br /><br />
                 I really liked this idea beacause I already developed a similiar
                 project in my sparetime (see
                 <a @click="scrollToElement('roundtrips4you')">Roundtrips4you</a
