@@ -100,14 +100,11 @@
               </p>
             </div>
             <div class="col-sm-12 col-md-7">
-              <video
-                class="rounded-borders"
-                style="width: 100%"
-                src="/jns.mp4"
-                controls
-                loop
-                autoplay
-              ></video>
+              <q-video
+                class="rounded-borders full-width"
+                src="https://www.youtube.com/embed/Wtd4c2Evfn8"
+                :ratio="16 / 9"
+              ></q-video>
             </div>
           </div>
 
@@ -193,7 +190,7 @@
               <q-video
                 class="rounded-borders full-width"
                 :ratio="16 / 9"
-                src="https://www.youtube.com/embed/bX2Asj1Ldyo"
+                src="https://www.youtube.de/embed/bX2Asj1Ldyo"
               ></q-video>
             </div>
 
@@ -249,7 +246,7 @@
               <q-video
                 class="rounded-borders full-width"
                 :ratio="16 / 9"
-                src="/RTPromo.mp4"
+                src="https://youtube.de/embed/YLek64s5ctc"
               ></q-video>
             </div>
           </div>
