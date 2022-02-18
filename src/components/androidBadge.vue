@@ -1,7 +1,7 @@
 <template>
   <a href="https://www.android.com/" target="_blank">
     <q-avatar class="inset-shadow tech-badge">
-      <q-img src="/Android_robot.svg" width="70px" />
+      <q-img src="../assets/Android_robot.svg" width="70px" />
       <q-tooltip> Android </q-tooltip>
     </q-avatar>
   </a>
