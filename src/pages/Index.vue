@@ -122,10 +122,13 @@
             </transition>
           </div>
 
-          <div v-scroll-fire="($event) => visibilityChanged(1)">
+          <div
+            v-show="showMirradsContainer"
+            v-scroll-fire="($event) => visibilityChanged(1)"
+          >
             <transition
-              enter-active-class="animated fadeInLeft"
-              leave-active-class="animated fadeOutRight"
+              enter-active-class="animated fadeInRight"
+              leave-active-class="animated fadeOutLeft"
             >
               <div v-show="showGrandEventContainer">
                 <div class="flex justify-between q-mt-lg">
@@ -168,7 +171,10 @@
             </transition>
           </div>
 
-          <div v-scroll-fire="($event) => visibilityChanged(2)">
+          <div
+            v-show="showGrandEventContainer"
+            v-scroll-fire="($event) => visibilityChanged(2)"
+          >
             <transition
               enter-active-class="animated fadeInLeft"
               leave-active-class="animated fadeOutRight"
@@ -219,10 +225,13 @@
             </transition>
           </div>
 
-          <div v-scroll-fire="($event) => visibilityChanged(3)">
+          <div
+            v-show="showMemodiaContainer"
+            v-scroll-fire="($event) => visibilityChanged(3)"
+          >
             <transition
-              enter-active-class="animated fadeInLeft"
-              leave-active-class="animated fadeOutRight"
+              enter-active-class="animated fadeInRight"
+              leave-active-class="animated fadeOutLeft"
             >
               <div v-show="showTourgetherContainer">
                 <div class="flex justify-between q-mt-lg">
@@ -263,7 +272,10 @@
             </transition>
           </div>
 
-          <div v-scroll-fire="($event) => visibilityChanged(4)">
+          <div
+            v-show="showTourgetherContainer"
+            v-scroll-fire="($event) => visibilityChanged(4)"
+          >
             <transition
               enter-active-class="animated fadeInLeft"
               leave-active-class="animated fadeOutRight"
@@ -324,10 +336,13 @@
             </transition>
           </div>
 
-          <div v-scroll-fire="($event) => visibilityChanged(5)">
+          <div
+            v-show="showRoundtripsContainer"
+            v-scroll-fire="($event) => visibilityChanged(5)"
+          >
             <transition
-              enter-active-class="animated fadeInLeft"
-              leave-active-class="animated fadeOutRight"
+              enter-active-class="animated fadeInRight"
+              leave-active-class="animated fadeOutLeft"
             >
               <div v-show="showMemuchoContainer">
                 <div class="flex justify-between q-mt-lg">
@@ -438,7 +453,7 @@ export default defineComponent({
             break;
           }
         }
-      }, 300);
+      }, 100);
     },
     scrollToElement(id: string) {
       const el = document.getElementById(id);

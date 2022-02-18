@@ -2,7 +2,7 @@
   <a href="https://www.android.com/" target="_blank">
     <q-avatar class="inset-shadow tech-badge">
       <q-img src="../assets/Android_robot.svg" width="70px" />
-      <q-tooltip> Android </q-tooltip>
+      <q-tooltip> Adobe Premiere </q-tooltip>
     </q-avatar>
   </a>
 </template>
