@@ -144,6 +144,7 @@
                   </div>
                   <div>
                     <xd-badge></xd-badge>
+                    <premiere-badge></premiere-badge>
                   </div>
                 </div>
                 <div class="row q-pt-md content-container">
@@ -243,6 +244,7 @@
                   </div>
                   <div>
                     <xd-badge></xd-badge>
+                    <premiere-badge></premiere-badge>
                   </div>
                 </div>
                 <div class="row q-pt-md content-container">
@@ -358,7 +360,9 @@
                       </q-badge>
                     </a>
                   </div>
-                  <div></div>
+                  <div>
+                    <net-badge></net-badge>
+                  </div>
                 </div>
                 <div class="row q-pt-md content-container">
                   <div class="col-sm-12 col-md-7">
@@ -401,14 +405,19 @@
           <div></div>
         </div>
 
-        <div class="flex justify-center q-pt-lg q-pb-lg">
-          <transition
-            enter-active-class="animated bounce"
-            leave-active-class="animated bounce"
-          >
-            <q-icon size="100px" name="chevron_up"></q-icon>
-          </transition>
-          <p class="text-h5" @click="scrollToElement('home')">Scroll up</p>
+        <div
+          class="flex justify-center full-width q-pt-lg q-pb-lg"
+          @click="scrollToElement('home')"
+        >
+          <div class="column cursor-pointer bounce-container">
+            <div class="flex full-width justify-center bounce">
+              <q-icon size="80px" color="primary" name="expand_less"></q-icon>
+            </div>
+
+            <div class="flex full-width justify-center">
+              <p class="text-h5 text-dark">Scroll up</p>
+            </div>
+          </div>
         </div>
       </div>
       <div class="col-2"></div>
@@ -423,10 +432,12 @@ const { getScrollTarget, setVerticalScrollPosition } = scroll;
 import vueBadge from '../components/vueBadge.vue';
 import androidBadge from '../components/androidBadge.vue';
 import XdBadge from 'src/components/xd-badge.vue';
+import PremiereBadge from 'src/components/premiereBadge.vue';
+import NetBadge from 'src/components/net-badge.vue';
 
 export default defineComponent({
   name: 'PageIndex',
-  components: { vueBadge, androidBadge, XdBadge },
+  components: { vueBadge, androidBadge, XdBadge, PremiereBadge, NetBadge },
   data() {
     return {
       showMirradsContainer: false,
