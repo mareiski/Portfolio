@@ -1,6 +1,6 @@
 <template>
   <q-page>
-    <div class="flex headline-container row q-py-lg">
+    <div class="flex headline-container row q-py-lg" id="home">
       <div class="col-2"></div>
       <div class="col-10 flex" style="flex-wrap: nowrap">
         <div class="flex justify-center q-pb-lg" style="flex-direction: column">
@@ -88,21 +88,23 @@
                   <div class="col-sm-12 col-md-5 q-pr-md">
                     <p>
                       Mirrads is a startup from Ingolstadt which sells smart
-                      mirros.
+                      mirrors.
                     </p>
                     <p>
                       I am working for Mirrads since January 2019. The company
                       sells mirrors which can show digital messages, mostly for
                       digital signage reasons. <br />
-                      <br />To display the videos & images on the mirror we used
-                      a android tv box and developed our own software. I created
-                      the whole app by myself for almost one year. We also
-                      implemented features like face recognition, nfc, barcode
-                      scanners and p2p connections between the mirrors. <br />
+                      <br />To display the videos & images on the mirror, we
+                      used a android tv box and developed our own software. I
+                      created the whole app by myself for almost one year. We
+                      also implemented features like face recognition, nfc,
+                      barcode scanners and p2p connections between the mirrors.
+                      <br />
                       <br />
                       To control the mirrors, we needed to create our own
-                      content management system (CMS) In 2021 I quit my android
-                      development and switched to the frontend work for the CMS.
+                      content management system (CMS). In 2021 I quit my android
+                      development and switched to the frontend work for the CMS
+                      at Mirrads.
                     </p>
                     <p>
                       I learned the most important skills at Mirrads, like
@@ -156,13 +158,13 @@
                     <p>
                       In the third semester of UXD at the THI we had to create
                       an interface for elderly peolpe. We created the app
-                      GrandEvent, an app where seniors can find nearby events
+                      GrandEvent, an app where seniors can find nearby events,
                       which are especially for them.<br /><br />
                       Our goal was to find an idea and make the whole process of
                       finding the target group, defining personas, designing
                       wireframes and finaly screen design. This was a lot of
                       work, we worked mostly with Adobe xd for the screen
-                      design. In the end we had to animate a movie which you
+                      design. In the end we had to animate a movie, which you
                       also can find here.
                     </p>
                   </div>
@@ -205,9 +207,10 @@
                       your gallery.
                       <br />
                       <br />
-                      Your can create albums like in a gallery but with diary
+                      Your can create albums like in a gallery, but with diary
                       like entries inside. You can also search for specific
-                      entries and share them with others.<br /><br />
+                      entries and share them with others (e.g. christmas
+                      2021).<br /><br />
                       Memodia is a webapp build with the Vue.js based on the
                       quasar framework. It runs as a website or an app on your
                       smartphone.
@@ -253,18 +256,19 @@
 
                   <div class="col-sm-12 col-md-5 q-pl-md">
                     <p>
-                      Another university project, which we created in the first
-                      semester. We wanted to create an app where groups of
-                      friends find together to plan their trip.<br /><br />
-                      I really liked this idea beacause I already developed a
+                      Another university project was Tourgether, which we
+                      created in the first semester. We wanted to create an app,
+                      where people with the same interests and destination find
+                      together and then plan their trip together.<br /><br />
+                      I really liked this idea, beacause I already developed a
                       similiar project in my sparetime (see
                       <a @click="scrollToElement('roundtrips4you')"
                         >Roundtrips4you</a
                       >). We designed screens in XD and created a final movie of
                       our project.<br /><br />
-                      This project helped me a lot to get the first experience
-                      in designing screens and developing a product from its
-                      idea.
+                      This project helped me a lot, to get the first experience
+                      in designing screens and developing a product from the
+                      beginning.
                     </p>
                   </div>
                 </div>
@@ -386,7 +390,7 @@
           </div>
         </div>
 
-        <div class="flex q-pb-lg q-mt-lg">
+        <div class="flex q-pb-lg q-mt-xl q-mb-xl">
           <div>
             <h4 id="contact">Contact</h4>
             <p>Feel free to contact me anytime via mail:</p>
@@ -395,6 +399,16 @@
             >
           </div>
           <div></div>
+        </div>
+
+        <div class="flex justify-center q-pt-lg q-pb-lg">
+          <transition
+            enter-active-class="animated bounce"
+            leave-active-class="animated bounce"
+          >
+            <q-icon size="100px" name="chevron_up"></q-icon>
+          </transition>
+          <p class="text-h5" @click="scrollToElement('home')">Scroll up</p>
         </div>
       </div>
       <div class="col-2"></div>
