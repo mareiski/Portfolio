@@ -136,11 +136,6 @@
                 <div class="flex justify-between q-mt-lg">
                   <div class="text-h5 q-mb-md">
                     <span>GrandEvent</span>
-                    <a href="https://mirrads.de" target="_blank">
-                      <q-badge class="q-ml-sm">
-                        <q-icon name="link"></q-icon> Video
-                      </q-badge>
-                    </a>
                   </div>
                   <div>
                     <xd-badge></xd-badge>
