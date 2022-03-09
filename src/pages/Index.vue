@@ -411,11 +411,11 @@
         >
           <div class="column cursor-pointer bounce-container">
             <div class="flex full-width justify-center bounce">
-              <q-icon size="80px" color="primary" name="expand_less"></q-icon>
+              <q-icon size="60px" color="primary" name="expand_less"></q-icon>
             </div>
 
             <div class="flex full-width justify-center">
-              <p class="text-h5 text-dark">Scroll up</p>
+              <p class="text-h6 text-dark">Scroll up</p>
             </div>
           </div>
         </div>
