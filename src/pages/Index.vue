@@ -19,6 +19,17 @@
           ></q-img>
         </div>
       </div>
+
+      <div class="flex full-width justify-center">
+        <div
+          class="cursor-pointer bounce-container"
+          @click="scrollToElement('introduction')"
+        >
+          <div class="flex full-width justify-center bounce">
+            <q-icon size="60px" color="primary" name="expand_more"></q-icon>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div
@@ -27,10 +38,10 @@
     >
       <div class="col-3"></div>
       <div class="flex justify-between col-6">
-        <router-link to="" @click="scrollToElement('about')">About</router-link>
         <router-link to="" @click="scrollToElement('projects')"
           >Projects</router-link
         >
+        <router-link to="" @click="scrollToElement('about')">About</router-link>
         <router-link to="" @click="scrollToElement('contact')"
           >Contact</router-link
         >
@@ -43,15 +54,10 @@
       <div class="col-8">
         <div class="flex">
           <div>
-            <h4 id="about">About me</h4>
+            <h4 id="introduction" class="q-mb-sm">Hello,</h4>
             <p>
-              Hello, I am Marco, {{ getAge() }} years old. I am studying UX
-              Design in Ingolstadt.
-            </p>
-            <p>
-              I am a passionate programmer since I was 13 years old. <br />
-              I developed a few own projects and worked in several companies
-              since 2017.
+              I am Marco, {{ getAge() }} years old. I am studying UX Design in
+              Ingolstadt and love programming.
             </p>
             <p>
               You find my latest projects below. Feel free to contact me anytime
@@ -72,12 +78,14 @@
               <div v-show="showMirradsContainer">
                 <div class="flex justify-between">
                   <div class="text-h5 q-mb-md">
-                    <span>Mirrads</span>
+                    <span>Mirrads </span>
                     <a href="https://mirrads.de" target="_blank">
                       <q-badge class="q-ml-sm">
                         <q-icon name="link"></q-icon> Website
                       </q-badge>
                     </a>
+                    <br />
+                    <span class="text-caption"> 2019 - now</span>
                   </div>
                   <div>
                     <android-badge></android-badge>
@@ -136,6 +144,8 @@
                 <div class="flex justify-between q-mt-lg">
                   <div class="text-h5 q-mb-md">
                     <span>GrandEvent</span>
+                    <br />
+                    <span class="text-caption"> 2022</span>
                   </div>
                   <div>
                     <xd-badge></xd-badge>
@@ -186,6 +196,8 @@
                         <q-icon name="link"></q-icon> Website
                       </q-badge>
                     </a>
+                    <br />
+                    <span class="text-caption"> 2022</span>
                   </div>
                   <div>
                     <vue-badge></vue-badge>
@@ -236,6 +248,8 @@
                 <div class="flex justify-between q-mt-lg">
                   <div class="text-h5 q-mb-md">
                     <span>Tourgether</span>
+                    <br />
+                    <span class="text-caption"> 2021</span>
                   </div>
                   <div>
                     <xd-badge></xd-badge>
@@ -283,9 +297,9 @@
             >
               <div v-show="showRoundtripsContainer">
                 <div id="roundtrips4you" class="flex justify-between q-mt-lg">
-                  <div class="text-h5 q-mb-md">
-                    <span>Roundtrips4you</span>
+                  <div class="text-h6 q-mb-md">
                     <div class="flex">
+                      <span class="text-h5">Roundtrips4you</span>
                       <a href="https://roundtrips4you.de" target="_blank">
                         <q-badge class="q-ml-sm">
                           <q-icon name="link"></q-icon> Website
@@ -300,6 +314,8 @@
                         </q-badge>
                       </a>
                     </div>
+                    <br />
+                    <span class="text-caption"> 2019 - 2022</span>
                   </div>
                   <div>
                     <vue-badge></vue-badge>
@@ -354,6 +370,8 @@
                         <q-icon name="link"></q-icon> Website
                       </q-badge>
                     </a>
+                    <br />
+                    <span class="text-caption"> 2017 - 2019</span>
                   </div>
                   <div>
                     <net-badge></net-badge>
@@ -391,11 +409,33 @@
 
         <div class="flex q-pb-lg q-mt-xl q-mb-xl">
           <div>
+            <h4 id="about">About</h4>
+            <p style="max-width: 500px">
+              I am a passionate programmer since I was 13 years old. <br />
+              I started with vb.net, C# and asp.net in 2017. After that I
+              started to learn java to develop android apps. I got a job at
+              Mirrads as an android developer in 2019, where I learned a lot
+              about threading and patterns. While working at Mirrads I started
+              to learn vue.js and quasar to develop modern websites. This is
+              where I started to build my own travel website Roundtrips4you.<br /><br />
+              One year later I switched from my android tasks at Mirrads to
+              frontend development with vue. Currently I am working at Mirrads
+              as a android Developer and quit my tasks as a frontend developer
+              there. Flutter is my new passion and I am currently learning it to
+              develop cross platform apps.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex q-pb-lg q-mt-xl q-mb-xl">
+          <div>
             <h4 id="contact">Contact</h4>
             <p>Feel free to contact me anytime via mail:</p>
             <a href="mailto:marco.reisinger@t-online.de"
               >marco.reisinger@t-online.de</a
             >
+            <!-- You may download my CV here:
+            <q-btn>Download</q-btn> -->
           </div>
           <div></div>
         </div>
