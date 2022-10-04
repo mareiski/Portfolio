@@ -190,6 +190,52 @@
               <div v-show="showMemodiaContainer">
                 <div class="flex justify-between q-mt-lg">
                   <div class="text-h5 q-mb-md">
+                    <span>SwipeAway</span>
+                    <br />
+                    <span class="text-caption"> 2022 - now</span>
+                  </div>
+                  <div>
+                    <vue-badge></vue-badge>
+                  </div>
+                </div>
+                <div class="row q-pt-md content-container">
+                  <div class="col-sm-12 col-md-5 q-pr-md">
+                    <p>
+                      SwipeAway is my latest self made project. The project is
+                      about finding the best location to make a trip to. You can
+                      swipe different sights of the world, from more popular to
+                      rather unknown places. In the end the app suggests you the
+                      best match with any region of the world via a heatmap.<br /><br />
+                      I used SwipeAway as the opportunity to learn flutter. It
+                      was very difficult to start but I got a first MVP very
+                      quickly.
+                    </p>
+                  </div>
+                  <div class="col-sm-12 col-md-7">
+                    <iframe
+                      style="border: 1px solid rgba(0, 0, 0, 0.1)"
+                      width="800"
+                      height="500"
+                      src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2Fpr3q1rN53mzuDQLY3l6JSU%2FSwipeAway%3Fnode-id%3D0%253A1"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </transition>
+          </div>
+
+          <!-- <div
+            v-show="showGrandEventContainer"
+            v-scroll-fire="($event) => visibilityChanged(2)"
+          >
+            <transition
+              enter-active-class="animated fadeInLeft"
+              leave-active-class="animated fadeOutRight"
+            >
+              <div v-show="showMemodiaContainer">
+                <div class="flex justify-between q-mt-lg">
+                  <div class="text-h5 q-mb-md">
                     <span>Memodia</span>
                     <a href="https://memodia.netlify.com" target="_blank">
                       <q-badge class="q-ml-sm">
@@ -234,7 +280,7 @@
                 </div>
               </div>
             </transition>
-          </div>
+          </div> -->
 
           <div
             v-show="showMemodiaContainer"
@@ -434,6 +480,16 @@
             <a href="mailto:marco.reisinger@t-online.de"
               >marco.reisinger@t-online.de</a
             >
+            <br />
+            <br />
+            <q-btn
+              @click="
+                openInNewTab(
+                  'https://de.linkedin.com/in/marco-reisinger-2aa9681b6'
+                )
+              "
+              >LinkedIn Profile</q-btn
+            >
             <!-- You may download my CV here:
             <q-btn>Download</q-btn> -->
           </div>
@@ -484,6 +540,9 @@ export default defineComponent({
     };
   },
   methods: {
+    openInNewTab(url: string) {
+      window.open(url, '_blank');
+    },
     visibilityChanged(id: number) {
       console.log(id);
       setTimeout(() => {
